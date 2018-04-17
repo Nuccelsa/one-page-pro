@@ -1,0 +1,19 @@
+{
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Nuccelsa/site-one-page"
+    },
+    "dependencies": {
+        "jquery": "^3.3.1"
+    },
+    "devDependencies": {
+        "browser-sync": "2.23.6",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "latest",
+        "gulp-clean-css": "3.9.2",
+        "gulp-load-plugins": "latest",
+        "gulp-rename": "^1.2.2",
+        "gulp-sass": "^3.1.0",
+        "gulp-uglify": "3.0.0"
+    }
+}
