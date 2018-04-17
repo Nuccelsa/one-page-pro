@@ -44,7 +44,7 @@ gulp.task('css:min', ['css:compile'], function () {
       .pipe(browserSync.stream());
   });
 
-// Tâche de build
+// Tâche CSS
 gulp.task('css', ['css:compile', 'css:min']);
 
 // Minification JS
@@ -61,7 +61,7 @@ gulp.task('js:min', function() {
       .pipe(browserSync.stream());
   });
 
-// JS
+// Tâche JS
 gulp.task('js', ['js:min']);
 
 // Tâche de prod = Compile CSS + minification CSS et JS
@@ -76,7 +76,7 @@ gulp.task('browserSync', function() {
     });
   });
 
-// Commande "gulp dev" fait TOUT
+// Commande "gulp" : fait TOUT pour pouvoir bosser en local
 gulp.task('default', ['prod', 'browserSync'], function() {
     gulp.watch('./src/scss/*.scss', ['css']);
     gulp.watch('./src/js/*.js', ['js']);
