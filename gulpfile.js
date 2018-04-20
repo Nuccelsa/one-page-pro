@@ -77,11 +77,8 @@ gulp.task('browserSync', function() {
   });
 
 // Commande "gulp" : fait TOUT pour pouvoir bosser en local
-gulp.task('default', ['prod', 'browserSync'], function() {
+gulp.task('default', ['prod', 'browserSync', 'vendor'], function() {
     gulp.watch('./src/scss/*.scss', ['css']);
     gulp.watch('./src/js/*.js', ['js']);
     gulp.watch('./*.html', browserSync.reload);
   });
-
-
-gulp.task('all', ['prod', 'vendor']);
