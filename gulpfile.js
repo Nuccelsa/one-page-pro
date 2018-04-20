@@ -8,7 +8,7 @@ var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
 
 // Tous les plugins de package.json
-var plugins = require('gulp-load-plugins')(); 
+var plugins = require('gulp-load-plugins')();
 
 
 // jQuery
@@ -78,7 +78,7 @@ gulp.task('browserSync', function() {
 
 // Commande "gulp" : fait TOUT pour pouvoir bosser en local
 gulp.task('default', ['prod', 'browserSync', 'vendor'], function() {
-    gulp.watch('./src/scss/*.scss', ['css']);
+    gulp.watch('./src/scss/**/*.scss', ['css']);
     gulp.watch('./src/js/*.js', ['js']);
     gulp.watch('./*.html', browserSync.reload);
   });
