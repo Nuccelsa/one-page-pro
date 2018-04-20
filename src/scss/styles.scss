@@ -1,8 +1,18 @@
-.h1 {
-    color: blue;
-    font-size: 3em;
-}
+@import 'abstracts/variables';
 
-.p {
-    font-weight :bold;
-}
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'components/contact';
+@import 'components/header-square';
+@import 'components/main-nav';
+@import 'components/one-tarif';
+@import 'components/social-nav';
+@import 'components/footer-nav';
+
+@import 'layout/about';
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/seances';
+@import 'layout/tarifs';
+@import 'layout/tools';

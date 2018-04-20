@@ -8,8 +8,7 @@ var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
 
 // Tous les plugins de package.json
-var plugins = require('gulp-load-plugins')(); 
-
+var plugins = require('gulp-load-plugins')();
 
 // jQuery
 gulp.task('vendor', function() {
@@ -18,9 +17,7 @@ gulp.task('vendor', function() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'))
-})
-
-
+});
 
 // Compilation scss en css
 gulp.task('css:compile', function () {
@@ -30,7 +27,7 @@ gulp.task('css:compile', function () {
       }).on('error', sass.logError))
     .pipe(plugins.autoprefixer())
     .pipe(gulp.dest('./dist/css/'));
-  });
+});
 
 // Minification css
 gulp.task('css:min', ['css:compile'], function () {
@@ -44,43 +41,49 @@ gulp.task('css:min', ['css:compile'], function () {
       }))
       .pipe(gulp.dest('./dist/css'))
       .pipe(browserSync.stream());
-  });
+});
 
 // Tâche CSS
 gulp.task('css', ['css:compile', 'css:min']);
 
 // Minification JS
 gulp.task('js:min', function() {
-    return gulp.src([
-      './src/js/*.js',
-      '!./src/js/*.min.js'
-    ])
-      .pipe(uglify())
-      .pipe(rename({
-        suffix: '.min'
-      }))
-      .pipe(gulp.dest('./dist/js'))
-      .pipe(browserSync.stream());
-  });
+  return gulp.src([
+    './src/js/*.js',
+    '!./src/js/*.min.js'
+  ])
+    .pipe(uglify())
+    .pipe(rename({
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('./dist/js'))
+    .pipe(browserSync.stream());
+});
 
 // Tâche JS
 gulp.task('js', ['js:min']);
 
+// Tâche images
+gulp.task('img', function () {
+  return gulp.src('./src/img/**')
+  .pipe(gulp.dest('./dist/img'));
+});
+
 // Tâche de prod = Compile CSS + minification CSS et JS
-gulp.task('prod', ['css', 'js']);
+gulp.task('prod', ['css', 'js', 'img']);
 
 // Config browserSync
 gulp.task('browserSync', function() {
-    browserSync.init({
-      server: {
-        baseDir: "./"
-      }
-    });
+  browserSync.init({
+    server: {
+      baseDir: "./"
+    }
   });
+});
 
 // Commande "gulp" : fait TOUT pour pouvoir bosser en local
 gulp.task('default', ['prod', 'browserSync', 'vendor'], function() {
-    gulp.watch('./src/scss/*.scss', ['css']);
-    gulp.watch('./src/js/*.js', ['js']);
-    gulp.watch('./*.html', browserSync.reload);
-  });
+  gulp.watch('./src/scss/**/*.scss', ['css']);
+  gulp.watch('./src/js/*.js', ['js']);
+  gulp.watch('./*.html', browserSync.reload);
+}); 
