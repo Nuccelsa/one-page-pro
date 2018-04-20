@@ -20,6 +20,8 @@ gulp.task('vendor', function() {
     .pipe(gulp.dest('./vendor/jquery'))
 })
 
+
+
 // Compilation scss en css
 gulp.task('css:compile', function () {
     return gulp.src('./src/scss/**/*.scss')
