@@ -1,3 +1,16 @@
-#main-nav{
+.main-nav{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 1em auto;
+
+  &__items ul{
+    display: flex;
+  }
+
+  &__items li{
+    list-style: none;
+    margin-right: 3em;
+  }
 }
