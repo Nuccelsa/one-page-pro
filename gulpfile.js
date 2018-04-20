@@ -10,6 +10,9 @@ var browserSync = require('browser-sync').create();
 // Tous les plugins de package.json
 var plugins = require('gulp-load-plugins')();
 
+var source = './src';
+var dest = './dist';
+
 // jQuery
 gulp.task('vendor', function() {
     gulp.src([
@@ -21,25 +24,25 @@ gulp.task('vendor', function() {
 
 // Compilation scss en css
 gulp.task('css:compile', function () {
-    return gulp.src('./src/scss/**/*.scss')
+    return gulp.src(source + '/scss/**/*.scss')
     .pipe(sass.sync({
         outputStyle: 'expanded'
       }).on('error', sass.logError))
     .pipe(plugins.autoprefixer())
-    .pipe(gulp.dest('./dist/css/'));
+    .pipe(gulp.dest(dest + '/css/'));
 });
 
 // Minification css
 gulp.task('css:min', ['css:compile'], function () {
     return gulp.src([
-      './dist/css/*.css',
-      '!./dist/css/*.min.css'
+      dest + '/css/*.css',
+      !dest + '/css/*.min.css'
     ])
       .pipe(cleanCSS())
       .pipe(rename({
         suffix: '.min'
       }))
-      .pipe(gulp.dest('./dist/css'))
+      .pipe(gulp.dest(dest + '/css'))
       .pipe(browserSync.stream());
 });
 
@@ -49,14 +52,14 @@ gulp.task('css', ['css:compile', 'css:min']);
 // Minification JS
 gulp.task('js:min', function() {
   return gulp.src([
-    './src/js/*.js',
-    '!./src/js/*.min.js'
+    source + '/js/*.js',
+    !source + '/js/*.min.js'
   ])
     .pipe(uglify())
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('./dist/js'))
+    .pipe(gulp.dest(dest + '/js'))
     .pipe(browserSync.stream());
 });
 
@@ -65,11 +68,14 @@ gulp.task('js', ['js:min']);
 
 // Tâche images
 gulp.task('img', function () {
-  return gulp.src('./src/img/**')
-  .pipe(gulp.dest('./dist/img'));
+  return gulp.src(source + '/img/**')
+  .pipe(gulp.dest(dest + '/img'));
 });
 
-// Tâche de prod = Compile CSS + minification CSS et JS
+/* Tâche de build : compilation + copie dans dist */
+gulp.task('build', ['css:compile', 'img']);
+
+// Tâche de prod = minification CSS et JS + copie
 gulp.task('prod', ['css', 'js', 'img']);
 
 // Config browserSync
@@ -81,9 +87,11 @@ gulp.task('browserSync', function() {
   });
 });
 
-// Commande "gulp" : fait TOUT pour pouvoir bosser en local
-gulp.task('default', ['prod', 'browserSync', 'vendor'], function() {
-  gulp.watch('./src/scss/**/*.scss', ['css']);
-  gulp.watch('./src/js/*.js', ['js']);
+// Commande "dev" pour pouvoir bosser en local
+gulp.task('dev', ['build', 'browserSync'], function() {
+  gulp.watch(source + '/scss/**/*.scss', ['css']);
+  gulp.watch(source + '/js/*.js', ['js']);
+  gulp.watch(source + '/img', ['img']);
   gulp.watch('./*.html', browserSync.reload);
 }); 
+

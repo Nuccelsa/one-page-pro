@@ -7,6 +7,8 @@
 
 ## Commandes à lancer dans le terminal
 
-* Cloner le repo
-* `NPM install` pour installer le dossier node_modules
-* `gulp` => lance la compilation SASS vers CSS, la minification des fichiers CSS et JS, crée le dossier de prod `/dist`, crée le dossier vendor et un nouvel onglet navigateur s'ouvre sur localhost:3333 avec le watcher.
+1. Cloner le repo
+2. `NPM install` pour installer le dossier node_modules
+3. `gulp vendor` => crée le dossier vendor 
+4. `gulp dev` => lance la compilation SASS vers CSS, la minification des fichiers CSS et JS, crée le dossier de prod `/dist`, et un nouvel onglet navigateur s'ouvre sur localhost:3333 avec le watcher.
+5. `gulp prod` => minification des fichiers.
