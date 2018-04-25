@@ -1,0 +1,15 @@
+.header-square{
+  width: 500px;
+  height: 500px;
+  border-left: 25px solid #fff;
+  border-top: 25px solid #fff;
+  border-bottom: 25px solid #fff;
+  box-sizing: border-box;
+  margin-left: 15%;
+  margin-top: 10%;
+
+& h1{
+  padding: 20%;
+  font-size: 5em;
+  }
+}

@@ -91,4 +91,3 @@ gulp.task('dev', ['build', 'browserSync'], function() {
   gulp.watch('./src/img', ['img']);
   gulp.watch('./*.html', browserSync.reload);
 }); 
-
