@@ -1,0 +1,22 @@
+.prices {
+    margin: 0 30% 0 30%;
+    &__title {
+      text-align: center;
+    }
+    &__cards {
+      margin-top: 3em;
+      display: flex;
+      &__hypnose {
+        margin-right: 1.2em;
+        background-color: $secondary-color;
+      }
+      &__pnl {
+        margin-left: 1.2em;
+        background-color: $secondary-lighten;
+      }
+      &__pnl, &__hypnose{
+        padding: 2.5em;
+      } 
+    }
+
+}
