@@ -1,15 +1,20 @@
 .header-square{
-  width: 500px;
-  height: 500px;
-  border-left: 25px solid #fff;
-  border-top: 25px solid #fff;
-  border-bottom: 25px solid #fff;
-  box-sizing: border-box;
-  margin-left: 15%;
-  margin-top: 10%;
+  display: grid;
+  grid-template-columns: 10% 50px 250px 30% 30%;
+  grid-template-rows: 30vh 5vh 30vh 5vh 30vh;
 
 & h1{
-  padding: 20%;
-  font-size: 5em;
+  font-size: 4vw;
+  grid-column: 3 / 5;
+  grid-row: 3;
+  align-self: center;
   }
+
+  &__square {
+    border-top: 20px solid #fff;
+    border-left: 20px solid #fff;
+    border-bottom: 20px solid #fff;
+    grid-column: 2 / 4;
+    grid-row: 2 / 5;
+}
 }

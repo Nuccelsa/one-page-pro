@@ -1,18 +1,18 @@
-.about{
+.description__about{
   margin-top: 10em;
   margin-bottom: 10em;
   display: grid;
   grid-template-columns: 55% 150px 150px 1fr;
   grid-template-rows: 20vh 300px 20vh;
 
-  &__div{
+  .description__about__div{
     grid-column: 1 / 3;
     grid-row: 1 / 4;
-    background-color: $title-color;
+    background-color: $secondary-color;
     display: flex;
     align-items: center;
 
-    .about__div__content{
+    .description__about__div__content{
       width: 60%;
       margin-left: 5em;
       color: #fff;
