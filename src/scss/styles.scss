@@ -1,5 +1,6 @@
 @import 'abstracts/variables';
 
+@import 'base/base';
 @import 'base/reset';
 @import 'base/typography';
 
@@ -8,6 +9,7 @@
 @import 'components/main-nav';
 @import 'components/one-tarif';
 @import 'components/social-nav';
+@import 'components/showcase';
 @import 'components/footer-nav';
 
 @import 'layout/about';

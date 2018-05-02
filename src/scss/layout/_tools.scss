@@ -2,7 +2,6 @@
 
 /* Titres */
 .description__h3 {
-    color: $title-color;
     font-weight: 700;
     font-size: 2em;
     margin-top: 4em;
@@ -20,12 +19,6 @@
    text-decoration: none;
   }
 
-  p { 
-      font-size: 1.2em;
-      line-height: 1.5em;
-      color: $font-color;
-      margin-top: 2em;
-  }
 }
 
 /* Container hypnose et pnl */
