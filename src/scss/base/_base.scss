@@ -1,0 +1,17 @@
+/* Style des liens */
+a {
+    text-decoration: none;
+}
+
+/* Style des h3 */
+h3 {
+    color: $title-color;
+}
+
+/* Style des paragraphes */
+.p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    color: $font-color;
+    margin-top: 2em;
+}
