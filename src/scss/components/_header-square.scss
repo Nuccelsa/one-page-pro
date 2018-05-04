@@ -8,12 +8,15 @@
   grid-column: 3 / 5;
   grid-row: 3;
   align-self: center;
+  color: $main-color;
+  font-family: 'Crimson Text', serif;
+  line-height: 2em;
   }
 
   &__square {
-    border-top: 20px solid #fff;
-    border-left: 20px solid #fff;
-    border-bottom: 20px solid #fff;
+    border-top: 20px solid $main-color;
+    border-left: 20px solid $main-color;
+    border-bottom: 20px solid $main-color;
     grid-column: 2 / 4;
     grid-row: 2 / 5;
 }
