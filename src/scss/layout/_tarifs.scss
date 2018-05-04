@@ -1,5 +1,11 @@
+.prices h2 {
+  color: $title-color;
+  font-weight: $fw-medium;
+  font-size: 3em;
+}
+
 .prices {
-    margin: 5em 25em 0 25em;
+    margin: 10em 25em 10em 25em;
     &__title {
       text-align: center;
     }
