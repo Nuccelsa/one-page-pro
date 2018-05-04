@@ -15,11 +15,11 @@
     .description__about__div__content{
       width: 60%;
       margin-left: 5em;
-      color: #fff;
+      color: $main-color;
 
       h3{
         color: $main-color;
-        font-weight: 700;
+        font-weight: $fw-medium;
         font-size: 2em;
         margin-bottom: 1.5em;
       }
