@@ -4,6 +4,11 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 0.5em;
+    margin-top: 20em;
+    width: 100%;
+    @media (min-width: $tel-s) {
+      width: 100%;
+    }
     &__container {
         width: 80%;
         display: flex;
@@ -11,13 +16,34 @@
         justify-content: space-around;
         padding: 5em 0;
     }
-    /* &__social-nav {
+    &__social-nav {
+      line-height: 1.5em;
+      &__title{
+        font-size: 1.2em;
+        margin-bottom: .8em;
+      }
+    }
 
-    } */
+    & .contact{
+      line-height: 1.5em;
+
+      &__name{
+        font-size: 1.2em;
+        margin-bottom: .8em;
+      }
+    }
 
     &__ariane a {
         flex-wrap: wrap;
         margin-left: 1em;
         color: $main-color;
+    }
+
+    // & i.fa.fa-linkedin {
+    //   margin-right: 150px;
+    // }
+
+    & .fa:before{
+      margin-right: 1em;
     }
 }

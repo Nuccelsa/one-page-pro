@@ -4,4 +4,18 @@ header{
   background-position: center;
   background-size: cover;
   height: 100vh;
+  position: relative;
+  z-index: 0;
+}
+
+header ::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $dark;
+  filter:opacity(2%);
+  z-index: -1;
 }

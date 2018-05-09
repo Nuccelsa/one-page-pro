@@ -4,6 +4,7 @@
   align-items: center;
   width: 95%;
   padding: 1em;
+  margin: 0 auto;
 
   &__items ul{
     display: flex;
@@ -12,5 +13,12 @@
   &__items li{
     list-style: none;
     margin-right: 3em;
+    font-size: 1.2em;
+  }
+
+  &__logo{
+    font-size: 1.6em;
+    color: #fff;
+    font-family: 'Crimson Text', serif;
   }
 }
