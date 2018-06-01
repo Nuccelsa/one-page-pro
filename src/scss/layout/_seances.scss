@@ -17,3 +17,15 @@
     }
 
 }
+.seance{
+
+    @media (max-width: $comput-s) {
+        width: 80%;
+    }
+
+    p {
+        @media (max-width: $tablet) {
+            
+        }
+    }
+}
