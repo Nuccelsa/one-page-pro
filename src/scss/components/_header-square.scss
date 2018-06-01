@@ -1,9 +1,9 @@
-.header-square{
+.header-square {
   display: grid;
   grid-template-columns: 10% 150px 350px 30% 1fr;
   grid-template-rows: 20vh 5vh 39vh 5vh 25vh;
 
-& h1{
+& h1 {
   font-size: 6em;
   grid-column: 3 / 5;
   grid-row: 3;
@@ -19,5 +19,5 @@
     border-bottom: 20px solid $main-color;
     grid-column: 2 / 4;
     grid-row: 2 / 5;
-}
+  }
 }
