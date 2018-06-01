@@ -1,49 +1,53 @@
+/* Partie encadrés Hypnose et PNL */
+
+/* Les encadrés */
 .showcase {
   margin-top: 6em;
-
   &__hypnose, &__pnl {
-      margin-bottom: 10em;
-     /*  @media (min-width:$comput-s) { */
-        display:flex;
-        flex-wrap: wrap;
-     /*  } */
+    margin-bottom: 10em;
+    display:flex;
+    flex-wrap: wrap;
   }
+
   &__pnl {
       .showcase__content {
         order:2;
       }
-  }
+  } 
+
   &__hypnose {
-    @media (max-width:$comput-s) {
-        .showcase__content {
-            order:2;
+      @media (max-width:$comput-s) {
+          .showcase__content {
+              order:2;
           }
-    }
-}
-
-.showcase__content {
-    padding:0 3em;
-    @media (max-width:$comput-s) {
-        width: 100%;
-    }
-    width: 50%;
-    box-sizing: border-box;
-    h3 {
-        font-weight: $fw-medium;
-        font-size: 2em;
-        margin-top: 4em;
       }
-}
-
-    .showcase__img {
-        @media (max-width:$comput-s) {
-            width: 100%;
-        }
-        width: 50%;
-        img {
-            width: 100%;
-            height: 100%;
-        }
     }
+  
+  /* Titre + texte */
+  .showcase__content {
+      @media (max-width:$comput-s) {
+          width: 100%;
+      }
+      width: 50%;
+      padding:0 3em;
+      box-sizing: border-box;
+      h3 {
+          font-weight: $fw-medium;
+          font-size: 2em;
+          margin-top: 4em;
+      }
+    }
+
+  /* Image seule */
+  .showcase__img {
+      @media (max-width:$comput-s) {
+          width: 100%;
+      }
+      width: 50%;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+  }
 
 }

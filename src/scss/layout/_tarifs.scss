@@ -1,17 +1,17 @@
 /* Section tarifs */
 .prices {
 
+    /* Titre */
     &__title {
       text-align: center;
       color: $title-color;
       font-weight: $fw-medium;
       font-size: 3em;
     }
-
+    
+    /* Encadrés jaunes */
     &__cards {
-      justify-content: center;
-      margin-top: 3em;
-      
+    /* Responsive */
       @media (min-width: $tel-s) {
         display: flex;
         flex-wrap: wrap;
@@ -20,43 +20,53 @@
         display: flex;
         flex-wrap: nowrap;
       }
+      /* Générique */
+      justify-content: center;
+      margin-top: 3em;
+      /* Sous titre */
+      .price__title {
+        color: $dark;
+        font-size: 20px;
+        margin-bottom: 1em;
+      }
 
+      /* Div de contenu */
       &__pnl, &__hypnose{
+        /* Responsive */
         @media (min-width: $tel-s) and (max-width: $comput-s) {
           margin: 0 ;
         }
         @media (min-width: $comput-s) {
           margin: 0 3em 0 3em;
         }
+        /* Générique */
         text-align: center;
         padding: 4em;
       } 
 
       &__hypnose {
+        /* Responsive */
         @media (min-width: $comput-m) {
           margin: 0 5em 0 0;
         }
         @media (min-width: $comput-xl) {
           margin: 0 5em 0 35em;
         }
+        /* Générique */
         background-color: $secondary-color;
       }
       &__pnl {
-         @media (min-width: $comput-m) {
+        /* Responsive */
+        @media (min-width: $comput-m) {
           margin: 0 0 0 5em;
         }
         @media (min-width: $comput-xl) {
           margin: 0 35em 0 5em;
         }
+        /* Générique */
         background-color: $title-color;
-      }
-
-      
+      }  
     }
 
 }
-.price__title {
-  color: $dark;
-  font-size: 20px;
-  margin-bottom: 1em;
-}
+

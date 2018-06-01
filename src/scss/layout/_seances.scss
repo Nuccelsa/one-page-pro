@@ -1,7 +1,12 @@
+
+/* Partie "déroulé de la première séance" */
 .seance {
     width: 60%;
     margin: 0 auto;
     text-align: center;
+    @media (max-width: $comput-s) {
+        width: 80%;
+    }
     
     p {
         margin-bottom:1em;
@@ -17,7 +22,7 @@
     }
 
 }
-.seance{
+/* .seance {
 
     @media (max-width: $comput-s) {
         width: 80%;
@@ -25,7 +30,8 @@
 
     p {
         @media (max-width: $tablet) {
-            
+
         }
     }
 }
+ */
