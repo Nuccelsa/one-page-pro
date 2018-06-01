@@ -1,29 +1,30 @@
 .showcase {
     margin-top: 6em;
   
-    &hypnose, &pnl {
+    &__hypnose, &__pnl {
       margin-bottom: 10em;
       display:flex;
       flex-wrap: wrap;
   
     }
-    &pnl {
-        .showcasecontent {
+    &__pnl {
+        .showcase__content {
           order:2;
         }
     }
-    &hypnose {
+    &__hypnose {
       @media (max-width:$comput-s) {
-          .showcasecontent {
+          .showcase__content {
               order:2;
             }
       }
   }
   
-  .showcasecontent {
+  .showcase__content {
       padding:0 3em;
       @media (max-width:$comput-s) {
           width: 100%;
+          text-align: center;
       }
       width: 50%;
       box-sizing: border-box;
@@ -31,10 +32,14 @@
           font-weight: $fw-medium;
           font-size: 2em;
           margin-top: 4em;
+
+          @media (max-width: $comput-s) {
+              margin-top: 2em;
+          }
         }
   }
   
-      .showcaseimg {
+      .showcase__img {
           @media (max-width:$comput-s) {
               width: 100%;
           }

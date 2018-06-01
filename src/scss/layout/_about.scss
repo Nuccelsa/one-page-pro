@@ -39,3 +39,36 @@
     background-size: cover;
   }
 }
+
+.description__about {
+  @media (max-width: $comput-s) {
+  grid-template-columns: 35% 15% 15% 35% 1fr;
+  grid-template-rows: 20vh 20vh 300px 20vh 20vh;
+
+  .description__about__div {
+    grid-column: 1 / 6;
+    grid-row: 2 / 7;
+    
+    h3 {
+      margin-top: 5em;
+    }
+
+    p {
+      margin-bottom: 5em;
+      margin-left: 2em;
+      margin-right: 2em;
+    }
+
+    .description__about__div__content {
+      margin-left: 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+  &__img {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+  }
+}
+}
