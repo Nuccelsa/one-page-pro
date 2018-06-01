@@ -1,32 +1,60 @@
-.prices h2 {
-  color: $title-color;
-  font-weight: $fw-medium;
-  font-size: 3em;
-}
-
+/* Section tarifs */
 .prices {
-    margin: 10em 25em 10em 25em;
+
     &__title {
       text-align: center;
+      color: $title-color;
+      font-weight: $fw-medium;
+      font-size: 3em;
     }
+
     &__cards {
       margin-top: 3em;
-      display: flex;
+      
+      @media (min-width: $tel-s) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      @media (min-width: $comput-s) {
+        display: flex;
+        flex-wrap: nowrap;
+      }
+
+      &__pnl, &__hypnose{
+        @media (min-width: $tel-s) and (max-width: $comput-s) {
+          margin: 0 ;
+        }
+        @media (min-width: $comput-s) {
+          margin: 0 3em 0 3em;
+        }
+        text-align: center;
+        padding: 4em;
+      } 
+
       &__hypnose {
-        margin-right: 1.2em;
+        @media (min-width: $comput-m) {
+          margin: 0 5em 0 15em;
+        }
+        @media (min-width: $comput-xl) {
+          margin: 0 5em 0 35em;
+        }
         background-color: $secondary-color;
       }
       &__pnl {
-        margin-left: 1.2em;
+         @media (min-width: $comput-m) {
+          margin: 0 5em 0 5em;
+        }
+        @media (min-width: $comput-xl) {
+          margin: 0 35em 0 5em;
+        }
         background-color: $secondary-lighten;
       }
-      &__pnl, &__hypnose{
-        padding: 2.5em;
-      } 
+
+      
     }
 
 }
-.price__title {
+/* .price__title {
   color: $main-color;
   font-size: 20px;
-}
+} */
