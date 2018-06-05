@@ -1,3 +1,4 @@
+/* Footer */
 .footer {
     background-color: $title-color;
     display: flex;
@@ -9,6 +10,7 @@
     @media (min-width: $tel-s) {
       width: 100%;
     }
+    /* Contenu contact + réseaux sociaux */
     &__container {
         width: 80%;
         display: flex;
@@ -16,6 +18,8 @@
         justify-content: space-around;
         padding: 5em 0;
     }
+
+    /* Réseaux sociaux */
     &__social-nav {
       line-height: 1.5em;
       &__title{
@@ -24,6 +28,7 @@
       }
     }
 
+    /* Partie contact */
     & .contact{
       line-height: 1.5em;
 
@@ -33,6 +38,7 @@
       }
     }
 
+    /* Fil d'ariane */
     &__ariane a {
         flex-wrap: wrap;
         margin-left: 1em;

@@ -1,3 +1,4 @@
+/* Header */
 header{
   background: url('../img/img1.jpg');
   background-repeat: no-repeat;
@@ -8,6 +9,7 @@ header{
   z-index: 0;
 }
 
+/* Filtre sur la photo */
 header ::before{
   content: '';
   position: absolute;
