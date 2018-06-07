@@ -16,9 +16,15 @@
   &__link{
    color: $title-color;
    font-weight: $fw-medium;
-   text-decoration: none;
+   text-decoration: none !important;
   }
 
+}
+.description__tools {
+@media (max-width:$tablet) {
+
+  max-width: 80%;
+  }
 }
 
 /* Container hypnose et pnl */

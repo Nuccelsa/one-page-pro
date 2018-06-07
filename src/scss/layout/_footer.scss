@@ -45,6 +45,16 @@
         color: $main-color;
     }
 
+    &__copyright {
+      margin-top: 1em;
+
+      a, i {
+        display: inline;
+        margin-left: 1em;
+        color: $main-color;
+      }
+    }
+
     // & i.fa.fa-linkedin {
     //   margin-right: 150px;
     // }
