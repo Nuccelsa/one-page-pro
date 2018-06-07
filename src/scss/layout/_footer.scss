@@ -1,65 +1,78 @@
 /* Footer */
 .footer {
-    background-color: $title-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 0.5em;
-    margin-top: 20em;
-    width: 100%;
-    @media (min-width: $tel-s) {
-      width: 100%;
-    }
-    /* Contenu contact + réseaux sociaux */
-    &__container {
-        width: 80%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding: 5em 0;
-    }
+  background-color: $title-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0.5em;
+  margin-top: 20em;
+  width: 100%;
+  font-size:1.3em;
 
-    /* Réseaux sociaux */
-    &__social-nav {
-      line-height: 1.5em;
-      &__title{
-        font-size: 1.2em;
-        margin-bottom: .8em;
-      }
-    }
-
-    /* Partie contact */
-    & .contact{
-      line-height: 1.5em;
-
-      &__name{
-        font-size: 1.2em;
-        margin-bottom: .8em;
-      }
-    }
-
-    /* Fil d'ariane */
-    &__ariane a {
+  /* Contenu contact + réseaux sociaux */
+  &__container {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 5em 0;
+      @media (min-width: $tel-s) and (max-width:$tel-l) {
         flex-wrap: wrap;
-        margin-left: 1em;
-        color: $main-color;
-    }
-
-    &__copyright {
-      margin-top: 1em;
-
-      a, i {
-        display: inline;
-        margin-left: 1em;
-        color: $main-color;
+        padding: 3em 0;
       }
-    }
+  }
 
-    // & i.fa.fa-linkedin {
-    //   margin-right: 150px;
-    // }
-
-    & .fa:before{
-      margin-right: 1em;
+  /* Réseaux sociaux */
+  &__social-nav {
+    line-height: 1.5em;
+    @media (min-width: $tel-s) and (max-width:$tel-l) {
+      margin-bottom: 2em;
     }
+    &__title{
+      font-size: 1.2em;
+      margin-bottom: .8em;
+      font-weight: bold;
+    }
+  }
+
+  /* Partie contact */
+  & .contact{
+    line-height: 1.5em;
+    &__name{
+      font-size: 1.2em;
+      margin-bottom: .8em;
+      font-weight: bold;
+    }
+  }
+
+  /* Fil d'ariane */
+  &__ariane a {
+      flex-wrap: wrap;
+      margin-left: 1em;
+      color: $main-color;
+  }
+
+  /* Mentions légales copyright */
+  &__copyright {
+    margin-top: 1em;
+
+    a, i {
+      display: inline;
+      margin-left: 1em;
+      color: $main-color;
+      font-size: 0.9em;
+    }
+  }
+
+  &__author {
+    margin-top: 1em;
+    color: $main-color;
+    font-size: 0.7em;
+  }
+
+  & .fa:before{
+    margin-right: 0.5em;
+  }
 }
+
+
