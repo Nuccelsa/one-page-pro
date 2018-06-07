@@ -78,7 +78,7 @@
 .description__about {
   @media (min-width: $tel-s) and (max-width: $tel-l) {
   grid-template-columns: 25% 25% 25% 25% 1fr;
-  grid-template-rows: 15vh 15vh 30% 20vh 20vh;
+  grid-template-rows: 12vh 12vh 30% 20vh 20vh;
 
   .description__about__div {
     grid-column: 1 / 6;
@@ -98,6 +98,10 @@
       margin-left: 0;
       width: 100%;
       text-align: center;
+
+      h3 {
+        margin-bottom: 2em;
+      }
     }
   }
   

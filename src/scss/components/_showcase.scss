@@ -27,7 +27,9 @@
   .showcase__content {
       @media (max-width:$comput-s) {
           width: 100%;
+          padding: 0 2em;
       }
+
       width: 50%;
       padding:0 3em;
       box-sizing: border-box;
