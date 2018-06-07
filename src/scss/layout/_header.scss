@@ -12,7 +12,7 @@ header{
 /* Filtre sur la photo */
 /* header ::before{
   content: '';
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -20,4 +20,5 @@ header{
   background-color: $dark;
   filter:opacity(2%);
   z-index: -1;
-} */
+}
+ */

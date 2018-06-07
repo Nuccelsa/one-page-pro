@@ -6,7 +6,11 @@
   padding: 1em;
   margin: 0 auto;
 
-
+  &__logo a .navbar-light .navbar-brand{
+    font-size: 1.6em;
+    color:$main-color;
+    font-family: 'Crimson Text', serif;
+  }
 
   &__items ul{
     display: flex;
@@ -18,10 +22,6 @@
     font-size: 1.2em;
   }
 
-  &__logo{
-    font-size: 1.6em;
-    color:$main-color;;
-    font-family: 'Crimson Text', serif;
-  }
 }
+
 
