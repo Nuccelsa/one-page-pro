@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-<html xmlns:og="http://ogp.me/ns#">
 
   <head>
 
@@ -25,59 +24,52 @@
   </head>
 
   <body>
-
     <header>
-        <nav class="main-nav__logo navbar navbar-expand-lg navbar-light bg-light">
-            <!-- bouton logo -->
-            <a class="navbar-brand" href="#">Delphine Le Masson</a>
-            <!-- Menu burger -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Nav qui disparait en mobile tablette -->
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <ul class="nav navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">A propos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Mes services</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">séance</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Tarifs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                  </li>
-                </ul>
-            </div>
-          </nav>
-        <!-- <div class="main-nav__logo">Delphine Le Masson</div>
-        <div class="main-nav__items">
-          <ul>
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Mes services</a></li>
-            <li><a href="#">Séance</a></li>
-            <li><a href="#">Tarifs</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div> -->
 
+      <nav class="main-nav__logo navbar navbar-expand-lg navbar-light">
+        <!-- Bouton "logo" -->
+        <a class="navbar-brand" href="#">Delphine Le Masson</a>
+        <!-- Menu burger -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nav qui disparait en mobile - tablette -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">A propos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">Mes services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#desc">Séance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#prices">Tarifs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
 
+      <!-- Carré blanc -->
       <div class="header-square">
         <div class="header-square__square"></div>
-        <h1>Psychopraticienne</br>
-        Hypnose & PNL</h1>
+        <h1>
+          Psychopraticienne
+          </br>Hypnose & PNL
+        </h1>
       </div>
+
     </header>
 
     <div class="container">
 
     <!-- Section Qui suis-je  -->
-    <section class="description">
+    <section class="description" id="about">
       <div class="description__about">
 
           <div class="description__about__div">
@@ -90,7 +82,7 @@
           <div class="description__about__img"></div>
       </div>
 
-        <div class="description__tools">
+        <div class="description__tools" id="service">
           <h3 class="description__h3">Mes outils thérapeuthiques</h3>
           <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi magni totam porro laudantium deserunt facilis doloribus quas praesentium asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi magni totam porro laudantium deserunt facilis doloribus quas praesentium asperiores </p>
         </div>
@@ -148,7 +140,7 @@
     <!-- Fin section hypnose et pnl -->
 
     <!-- Section séance -->
-    <section class="seance">
+    <section class="seance" id="desc">
       <h3>Déroulé de la première séance</h3>
       <p class="p">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam optio eaque a reprehenderit labore adipisci animi veniam sequi similique consequatur eligendi illum laborum ullam debitis iure libero quaerat, sed voluptate voluptatibus nobis. Atque earum a facere sint impedit libero, laborum quisquam! Praesentium, ex? Architecto hic officia soluta optio rem quidem enim nisi accusantium numquam quos laudantium voluptatem accusamus, perferendis ea quia, nulla, culpa fugiat minus explicabo aliquam. Quaerat laudantium vel assumenda officiis, est commodi voluptas ducimus, corporis facere. Hic, sapiente?
@@ -164,7 +156,7 @@
       </p>
     </section>
 
-    <section class="prices">
+    <section class="prices" id="prices">
 
         <h2 class="prices__title">Tarifs</h2>
         <div class="prices__cards">
@@ -214,7 +206,7 @@
             </div>
           </nav>
 
-          <div class="contact">
+          <div class="contact" id="contact">
             <div class="contact__name">Delphine Le Masson</div>
             <ul class="contact__list">
               <li class="contact__list-item">
