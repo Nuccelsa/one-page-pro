@@ -23,11 +23,13 @@
       /* Générique */
       justify-content: center;
       margin-top: 3em;
+      font-size: 1.2em;
       /* Sous titre */
       .price__title {
         color: $dark;
-        font-size: 20px;
+        font-size: 1.5em;
         margin-bottom: 1em;
+        font-weight: 700;
       }
 
       /* Div de contenu */
@@ -64,9 +66,16 @@
           margin: 0 35em 0 5em;
         }
         /* Générique */
-        background-color: $title-color;
+        background-color: #ffdbaa;
       }  
     }
 
 }
 
+.prices__cards__pnl{
+  &__content1, &__content2 {
+  p {
+    color: $font-color;
+  }
+}
+}
