@@ -1,5 +1,15 @@
 .navbar-light .navbar-brand, .navbar-nav .nav-item .nav-link{
-  color:transparentize($dark, 0.5);
+  color: $dark;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav {
+  @media (min-width: $comput-s) {
+    color: $main-color;
+  }
+
+  @media (min-width: $tel-s) and (max-width: $tablet) {
+    color: $main-color;
+  }
 }
 
 .navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav {
