@@ -1,3 +1,18 @@
+/* Coloration blanche de toute la nav */
+.navbar-light .navbar-brand, .navbar-nav .nav-item .nav-link{
+  color: $dark;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav {
+  @media (min-width: $comput-s) {
+    color: $main-color;
+  }
+
+  @media (min-width: $tel-s) and (max-width: $tablet) {
+    color: $main-color;
+  }
+}
+
 .main-nav{
   display: flex;
   justify-content: space-between;
@@ -6,9 +21,11 @@
   padding: 1em;
   margin: 0 auto;
 
-  &__logo a .navbar-light .navbar-brand{
-    font-size: 1.6em;
-    color:$main-color;
+  &__logo {
+    font-size: 2em;
+    @media (max-width: $tel-m) {
+      font-size: 1.5em;
+    }
     font-family: 'Crimson Text', serif;
   }
 
@@ -18,18 +35,11 @@
 
   &__items li{
     list-style: none;
-    margin-right: 3em;
-    font-size: 1.2em;
+    margin-right: 1em;
+    font-size: 1.5em;
+    @media (max-width: $tel-m) {
+      font-size: 1em;
+    }
   }
-
 }
 
-.navbar-light .navbar-nav .nav-link {
-  color:transparentize($dark, 0.5);
-  font-family: 'Crimson Text', Serif;
-  font-size: 1.5em;
-}
-
-.navbar-light .navbar-brand {
-  color:transparentize($dark, 0.5);;
-}
