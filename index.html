@@ -27,33 +27,33 @@
     <header>
 
       <nav class="main-nav  navbar navbar-expand-lg navbar-light">
-        <!-- Bouton "logo" -->
-        <a class="main-nav__logo navbar-brand" href="#">Delphine Le Masson</a>
-        <!-- Menu burger -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Nav qui disparait en mobile - tablette -->
-        <div class="main-nav__items collapse navbar-collapse" id="navbarTogglerDemo01">
-          <ul class="nav navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#about">A propos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#service">Mes services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#desc">Séance</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#prices">Tarifs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
-            </ul>
-        </div>
-      </nav>
+          <!-- Bouton "logo" -->
+          <a class="main-nav__logo navbar-brand" href="#">Delphine Le Masson</a>
+          <!-- Menu burger -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Nav qui disparait en mobile - tablette -->
+          <div class="main-nav__items collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">A propos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#service">Mes services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#desc">Séance</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#prices">Tarifs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+          </div>
+        </nav>
 
       <!-- Carré blanc -->
       <div class="header-square">
@@ -186,67 +186,86 @@
 
         <div class="footer__container">
 
-          <div class="contact" id="contact">
-            <div class="contact__name">Delphine Le Masson</div>
-            <ul class="contact__list">
-              <li class="contact__list-item">
-                <a href="mailto:mail@mail.com" class="contact__list-item__mail" title="M'envoyer un e-mail à mail@mail.com">
-                  <i class="fa fa-envelope" aria-hidden="true">
-                    mail@mail.com
-                  </i>
-                </a>
-              </li>
-              <li class="contact__list-item">
-                <a href="tel:+33123456789" class="contact__list-item__phone" title="Me téléphoner au 0123456789">
-                  <i class="fa fa-phone" aria-hidden="true">
-                    0123456789
-                  </i>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <div class="footer__social-nav">
+            <div class="footer__social-nav__title">
+              Mes réseaux
+            </div>
+            <div class="footer__social-nav__circle">
+              <ul class="footer__social-nav__circle__list">
+                <li class="footer__social-nav__circle__list-item">
+                  <a href="#" class="circle__list-item">
+                    <i class="fa fa-linkedin" aria-hidden="true">Mon profil LinkedIn</i>
+                  </a>
+                </li>
+                <li class="footer__social-nav__circle__list-item">
+                  <a href="#" class="circle__list-item">
+                    <i class="fa fa-facebook" aria-hidden="true">Ma page Facebook</i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            </div>
+
+            <div class="contact" id="contact">
+              <div class="contact__name">Delphine Le Masson</div>
+              <ul class="contact__list">
+                <li class="contact__list-item">
+                  <a href="mailto:mail@mail.com" class="contact__list-item__mail" title="M'envoyer un e-mail à mail@mail.com">
+                    <i class="fa fa-envelope" aria-hidden="true">
+                      mail@mail.com
+                    </i>
+                  </a>
+                </li>
+                <li class="contact__list-item">
+                  <a href="tel:+33123456789" class="contact__list-item__phone" title="Me téléphoner au 0123456789">
+                    <i class="fa fa-phone" aria-hidden="true">
+                      0123456789
+                    </i>
+                  </a>
+                </li>
+              </ul>
+            </div>
 
       </div>
 
-        <div class="footer__ariane">
-          <a href="#about">A propos</a>
-          <a href="#service">Mes services</a>
-          <a href="#desc">Séance</a>
-          <a href="#prices">Tarifs</a>
-          <a href="#contact">Contact</a>
-        </div>
+      <div class="footer__ariane">
+        <a href="#about">A propos</a>
+        <a href="#service">Mes services</a>
+        <a href="#desc">Séance</a>
+        <a href="#prices">Tarifs</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-        <div class="footer__copyright">
+      <div class="footer__modal">
+         <!-- modal -->
+         <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Mentions Légales</a>
 
-          <!-- modal -->
-          <a href="#" data-toggle="modal" data-target="#exampleModalCenter">Mentions Légales</a>
+         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+             <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <h5 class="modal-title" id="exampleModalLongTitle">Mentions légales</h5>
+                   <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
+                     <span aria-hidden="true">&times;</span>
+                   </button>
+                 </div>
+           <div class="modal-body">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus impedit beatae suscipit distinctio nihil porro aliquam quam qui, sed inventore quisquam sapiente in non perferendis, libero hic itaque, asperiores earum?</p>
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+           </div>
+             </div>
+           </div>
+         </div>
+      </div><!-- fin du modal -->
 
-          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Mentions légales</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Fermer">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-            <div class="modal-body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus impedit beatae suscipit distinctio nihil porro aliquam quam qui, sed inventore quisquam sapiente in non perferendis, libero hic itaque, asperiores earum?</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-            </div>
-              </div>
-            </div>
-          </div>
-          <!-- fin du modal -->
-
-          <i class="fa fa-copyright" aria-hidden="true">Copyright Delphine Le Masson - Tous droits réservés</i>
-        </div>
+      <div class="footer__copyright">
+        <i class="fa fa-copyright" aria-hidden="true">Copyright Delphine Le Masson - Tous droits réservés</i>
+      </div>
 
         <div class="footer__author">
-          Un site réalisé par Quentin Le Masson
-          <br> et  <a href="https://nuccelsa.github.io/">Elsa Fredenucci</a>
+          Un site réalisé par Quentin Le Masson et  <a class="footer__author-2" href="https://nuccelsa.github.io/" target="_blank" title="Site d'Elsa Fredenucci">Elsa Fredenucci</a>
         </div>
 
       </footer>

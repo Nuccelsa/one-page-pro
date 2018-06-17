@@ -1,6 +1,12 @@
-/* Coloration blanche de toute la nav */
 .navbar-light .navbar-brand, .navbar-nav .nav-item .nav-link{
   color:transparentize($dark, 0.5);
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav {
+  @media (min-width: $tel-s) and (max-width: $tel-l) {
+    color: $main-color;
+    font-weight: bold;
+  }
 }
 
 .main-nav{
@@ -11,6 +17,7 @@
   padding: 1em;
   margin: 0 auto;
 
+  /* Partie gauche "logo" */
   &__logo {
     font-size: 2em;
     @media (max-width: $tel-m) {
@@ -19,6 +26,7 @@
     font-family: 'Crimson Text', serif;
   }
 
+  /* Partie droite */
   &__items ul{
     display: flex;
   }
@@ -27,6 +35,9 @@
     list-style: none;
     margin-right: 1em;
     font-size: 1.5em;
+    @media (max-width: $tel-m) {
+      font-size: 1em;
+    }
   }
 }
 
