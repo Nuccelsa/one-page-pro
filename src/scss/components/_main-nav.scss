@@ -24,4 +24,12 @@
 
 }
 
+.navbar-light .navbar-nav .nav-link {
+  color:transparentize($dark, 0.5);
+  font-family: 'Crimson Text', Serif;
+  font-size: 1.5em;
+}
 
+.navbar-light .navbar-brand {
+  color:transparentize($dark, 0.5);;
+}
