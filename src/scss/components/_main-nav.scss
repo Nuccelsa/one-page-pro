@@ -26,6 +26,7 @@
   width: 95%;
   padding: 1em;
   margin: 0 auto;
+  position:fixed;
 
   /* Partie gauche "logo" */
   &__logo {
@@ -51,3 +52,6 @@
   }
 }
 
+.color{
+  background-color: $dark;
+}
