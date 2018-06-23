@@ -23,16 +23,18 @@
 
     <!-- Boostrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">    
 
     <!-- CSS custom -->
     <link href="dist/css/styles.min.css" rel="stylesheet">
 
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target=".main-nav">
     <header>
 
-      <nav class="main-nav  navbar navbar-expand-lg navbar-light">
+      <nav class="main-nav  navbar navbar-expand-lg navbar-light" >
           <!-- Bouton "logo" -->
           <a class="main-nav__logo navbar-brand" href="#">Delphine Le Masson</a>
           <!-- Menu burger -->
@@ -65,8 +67,8 @@
       <div class="header-square">
         <div class="header-square__square"></div>
         <h1>
-          Psychopraticienne
-          </br>Hypnose & PNL
+          Hypnothérapeute
+          </br>Praticienne en PNL
         </h1>
       </div>
 
@@ -80,8 +82,18 @@
 
           <div class="description__about__div">
             <div class="description__about__div__content">
-            <h3 >Qui suis-je ?</h3>
-            <p class="animated fadeInLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum voluptatum quod ex ipsam iste totam, inventore facilis dolorem expedita, fuga explicabo quidem libero, nam unde saepe amet eligendi ad! Blanditiis veritatis sed incidunt, dolores quisquam repudiandae sequi molestiae esse. Libero veritatis quas, provident iste consequatur dolore omnis, placeat temporibus tenetur maiores voluptatum! Est iure nulla harum voluptatibus? Rem assumenda nulla tempore illum dolorem officiis rerum, sed consectetur delectus debitis laboriosam odio expedita labore, fugiat voluptate itaque</p>
+            <h3 class="wow zoomIn " data-wow-delay=".50s">Qui suis-je ?</h3>
+            <p class="">Je m’appelle Delphine Le Masson, je suis Hypnothérapeute et PNListe.
+              Je nourris depuis longtemps un intérêt pour la psychologie humaine et le développement personnel,
+              qui, en parallèle de ma vie professionnelle, n’a jamais cessé de me passionner.
+              
+              C’est pourquoi il y a quelques années j’ai fait le choix de m’y consacrer pleinement et d’en faire mon métier.
+              
+              Aujourd’hui je vis ma vocation et je vous accompagne vers la réalisation de vos objectifs, vers une meilleure version de vous-même.
+              
+              L’un des prédicats de le PNL dit que « Chaque personne possède toutes les ressources nécessaires pour opérer tous les changements désirés ». J’en suis convaincue !
+              <br>
+              Parfois il suffit juste d’un petit coup de pouce !</p>
             </div>
           </div>
 
@@ -90,7 +102,8 @@
 
         <div class="description__tools" id="service">
           <h3 class="description__h3">Mes outils thérapeuthiques</h3>
-          <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi magni totam porro laudantium deserunt facilis doloribus quas praesentium asperiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi magni totam porro laudantium deserunt facilis doloribus quas praesentium asperiores </p>
+          <p class="p">
+            Diplômée en PNL par The Society of Neuro-Linguistic Programming ™ » (USA) , en Hypnose par <a href="http://www.generation-formation.com/" target="blank">Génération Formation</a> et formée à la Psychopathologie par le <a href="http://www.bdp-rh.eu/" target="blank">Bruno Dal Palu</a>.</p>
         </div>
 
         <div class="description__container">
@@ -108,8 +121,8 @@
     <!-- Section hypnose et pnl -->
     <section class="showcase">
       <div class="showcase__hypnose">
-        <div class="showcase__content">
-            <h3>Hypnose Ericksonienne</h3>
+        <div class="showcase__content wow fadeInLeft" data-wow-delay=".50s">
+            <h3 class="">Hypnose Ericksonienne</h3>
             <p class="p">
                 Elle tire son nom de <a href="https://fr.wikipedia.org/wiki/Milton_Erickson" target="_blank">Docteur Milton Erickson</a>, psychiatre et psychologue américain qui a consacré la majeure partie de sa vie à étudier les états modifiés de conscience. Pour lui l’inconscient est un vrai réservoir à ressources. Il est aujourd’hui considéré comme le père fondateur des thérapies brèves.<br>
 
@@ -119,13 +132,13 @@
             </p>
         </div>
 
-        <div class="showcase__img" id="hypnose">
+        <div class="showcase__img wow fadeInRight" data-wow-delay=".50s" id="hypnose">
           <img src="./src/img/img2.jpg" alt="">
         </div>
       </div>
 
       <div class="showcase__pnl">
-        <div class="showcase__content">
+        <div class="showcase__content wow fadeInRight" data-wow-delay=".50s">
           <h3>PNL</h3>
           <p class="p">
               La programmation neuro linguistique a été créée aux Etats Unis, au milieu des années 70 par deux psychologues : R. Bandler, linguiste, et J. Grinder, mathématicien. Ensemble, ils ont travaillé à l’étude de génies des thérapies brèves puis de la communication, du sport… Ce qui a donné naissance à des outils, des techniques et des protocoles.<br>
@@ -137,7 +150,7 @@
           </p>
       </div>
 
-        <div class="showcase__img" id="pnl">
+        <div class="showcase__img wow fadeInLeft" data-wow-delay=".50s" id="pnl">
           <img src="./src/img/img4.jpg" alt="">
         </div>
       </div>
@@ -147,26 +160,19 @@
 
     <!-- Section séance -->
     <section class="seance" id="desc">
-      <h3>Déroulé de la première séance</h3>
+      <h3>Comment se passe une séance ?</h3>
       <p class="p">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam optio eaque a reprehenderit labore adipisci animi veniam sequi similique consequatur eligendi illum laborum ullam debitis iure libero quaerat, sed voluptate voluptatibus nobis. Atque earum a facere sint impedit libero, laborum quisquam! Praesentium, ex? Architecto hic officia soluta optio rem quidem enim nisi accusantium numquam quos laudantium voluptatem accusamus, perferendis ea quia, nulla, culpa fugiat minus explicabo aliquam. Quaerat laudantium vel assumenda officiis, est commodi voluptas ducimus, corporis facere. Hic, sapiente?
-      </p>
-      <p class="p">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam optio eaque a reprehenderit labore adipisci animi veniam sequi similique consequatur eligendi illum laborum ullam debitis iure libero quaerat, sed voluptate voluptatibus nobis. Atque earum a facere sint impedit libero, laborum quisquam! Praesentium, ex? Architecto hic officia soluta optio rem quidem enim nisi accusantium numquam quos laudantium voluptatem accusamus, perferendis ea quia, nulla, culpa fugiat minus explicabo aliquam. Quaerat laudantium vel assumenda officiis, est commodi voluptas ducimus, corporis facere. Hic, sapiente?
-      </p>
-      <p class="p">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam optio eaque a reprehenderit labore adipisci animi veniam sequi similique consequatur eligendi illum laborum ullam debitis iure libero quaerat, sed voluptate voluptatibus nobis. Atque earum a facere sint impedit libero, laborum quisquam! Praesentium, ex? Architecto hic officia soluta optio rem quidem enim nisi accusantium numquam quos laudantium voluptatem accusamus, perferendis ea quia, nulla, culpa fugiat minus explicabo aliquam. Quaerat laudantium vel assumenda officiis, est commodi voluptas ducimus, corporis facere. Hic, sapiente?
-      </p>
-      <p class="p">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam optio eaque a reprehenderit labore adipisci animi veniam sequi similique consequatur eligendi illum laborum ullam debitis iure libero quaerat, sed voluptate voluptatibus nobis. Atque earum a facere sint impedit libero, laborum quisquam! Praesentium, ex? Architecto hic officia soluta optio rem quidem enim nisi accusantium numquam quos laudantium voluptatem accusamus, perferendis ea quia, nulla, culpa fugiat minus explicabo aliquam. Quaerat laudantium vel assumenda officiis, est commodi voluptas ducimus, corporis facere. Hic, sapiente?
-      </p>
+        L'Hypnose et la PNL ne sont pas de la magie, elles demandent de l'investissement de ma part ainsi que de la vôtre. C'est un travail qui se fait à 2 voire à 3 : vous, moi et votre inconscient.
+        Lors de la première séance, il est important pour moi de prendre du temps pour discuter, faire connaissance afin de vous aider au mieux dans votre démarche de changement. Nous déterminerons ensemble le meilleur objectif pour vous.
+        J'aime à rendre les gens autonomes, acteurs de leur propre changement car chacun possède déjà sa solution.
+        Le but est de mettre en place la stratégie la plus adaptée afin que vous puissiez accéder plus facilement à vos propres ressources, y compris en dehors des séances.
     </section>
 
     <section class="prices" id="prices">
 
         <h2 class="prices__title">Tarifs</h2>
         <div class="prices__cards">
-          <div class="prices__cards__hypnose">
+          <div class="prices__cards__hypnose wow fadeInLeft" data-wow-delay=".50s">
               <h3 class="price__title">Tarifs à domicile</h3>
             <div class="prices__cards__hypnose__content1">
               <p>Chomeurs/Etudiants: 55€</p>
@@ -175,7 +181,7 @@
               <p>Personnes lambda: 65€</p>
             </div>
           </div>
-          <div class="prices__cards__pnl">
+          <div class="prices__cards__pnl wow fadeInRight" data-wow-delay=".50s">
               <h3 class="price__title">Tarifs en cabinet</h3>
             <div class="prices__cards__pnl__content1">
               <p>Chomeurs/Etudiants: 50€</p>
@@ -196,34 +202,34 @@
             <div class="footer__social-nav__title">
               Mes réseaux
             </div>
-               <ul class="footer__social-nav__list">
-                <li class="footer__social-nav__list__item">
-                  <a href="#" class="list__item">
-                    <i class="fa fa-linkedin" aria-hidden="true">Mon profil LinkedIn</i>
-                  </a>
-                </li>
-                <li class="footer__social-nav__list__item">
-                  <a href="#" class="list__item">
-                    <i class="fa fa-facebook" aria-hidden="true">Ma page Facebook</i>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <ul class="footer__social-nav__list">
+              <li class="footer__social-nav__list__item">
+                <a href="#" target="blank" class="list__item">
+                  <i class="fa fa-linkedin" aria-hidden="true">Mon profil LinkedIn</i>
+                </a>
+              </li>
+              <li class="footer__social-nav__list__item">
+                <a href="https://www.facebook.com/lemasson.pnl.hypnose/" target="blank" class="list__item">
+                  <i class="fa fa-facebook" aria-hidden="true">Ma page Facebook</i>
+                </a>
+              </li>
+            </ul>
+         </div>
 
             <div class="contact" id="contact">
               <div class="contact__name">Delphine Le Masson</div>
               <ul class="contact__list">
                 <li class="contact__list-item">
-                  <a href="mailto:mail@mail.com" class="contact__list-item__mail" title="M'envoyer un e-mail à mail@mail.com">
+                  <a href="lemasson.pnl@gmail.com" class="contact__list-item__mail" title="M'envoyer un e-mail à mail@mail.com">
                     <i class="fa fa-envelope" aria-hidden="true">
                       mail@mail.com
                     </i>
                   </a>
                 </li>
                 <li class="contact__list-item">
-                  <a href="tel:+33123456789" class="contact__list-item__phone" title="Me téléphoner au 0123456789">
+                  <a href="tel:+33768288991" class="contact__list-item__phone" title="Me téléphoner au 0768288991">
                     <i class="fa fa-phone" aria-hidden="true">
-                      0123456789
+                      07 68 28 89 91
                     </i>
                   </a>
                 </li>
@@ -276,15 +282,17 @@
 
     </div> <!-- Fin div container -->
 
+    <!-- BS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
     </script>
-    <script src="js/wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
+    <!-- WOW -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script> new WOW().init();</script>
+    <!-- JS perso -->
+    <script src="dist/js/script.min.js"></script>
   </body>
 </html>
