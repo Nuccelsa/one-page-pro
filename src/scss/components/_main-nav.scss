@@ -54,10 +54,6 @@
 }
 
 .navbar.scrolled {
-  background: rgb(83, 83, 83);
-  background: rgba(247, 162, 66, 0.78);
-}
-
-.color{
-  background-color: $dark;
+  background: $navbar-active;
+  background: $navbar-bg;
 }
