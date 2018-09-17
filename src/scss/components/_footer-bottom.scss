@@ -1,0 +1,22 @@
+  /* Link Quentin */
+  &__author {
+    margin-top: 1em;
+    @media (max-width: $tel-l) {
+      margin-top: 0.5em;
+    }
+    text-align: center;
+    color: $main-color;
+    font-size: 0.7em;
+  }
+  /* Link Elsa */
+  &__author-2 {
+    color:transparentize($dark, 0.5);
+    &:hover {
+      color:$main-color;
+      text-decoration:none;
+    }
+  }
+
+  & .fa:before{
+    margin-right: 0.5em;
+  }

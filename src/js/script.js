@@ -1,9 +1,8 @@
-/* var scrollex = require('jquery.scrollex'); */
+
 
 var app = {
 
     init: function() {
-        
         function checkScroll(){
             var startY = $('.navbar').height() * 1; //The point where the navbar changes in px
             if($(window).scrollTop() > startY){
@@ -11,6 +10,8 @@ var app = {
             }else{
                 $('.navbar').removeClass("scrolled");
             }
+
+            $('#about').css('padding-top', '10px');
         }
         
         if($('.navbar').length > 0){
@@ -18,6 +19,7 @@ var app = {
                 checkScroll();
             });
         }
+        
     },
 
 }
