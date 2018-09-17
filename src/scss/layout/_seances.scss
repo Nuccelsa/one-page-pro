@@ -16,13 +16,59 @@
         color: $font-color;
     }
 
-    h3 {
+    .title-seance {
         font-weight: $fw-medium;
         font-size: 2em;
         margin-bottom: 2em;
     }
 
 }
+// Autre classe de la section séance
+.seance-1 {
+    margin-bottom: 5em;
+}
+
+// section entre-seance placée dans la section seance
+.entre-seance {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5em;
+
+    @media (max-width: $comput-s) {
+        width: 80%;
+    }
+}
+
+// paragraphe en dessous du titre "Pour quoi ? et Pourquoi ?
+.p-list-heal {
+    margin-bottom: 2em;
+}
+
+// Titre pour quoi ? Pourquoi ?
+.title-list-heal {
+    font-weight: $fw-medium;
+    font-size: 2em;
+    margin-top: 2em;
+    margin-bottom: 0%;
+}
+
+// Titres des li
+.list-title {
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    text-align: left;
+    margin-top: 1em;
+    font-weight: 600;
+}
+
+// li
+.list-heal {
+    list-style: initial;
+    text-align: left;
+    color: $font-color;
+}
+
 /* .seance {
 
     @media (max-width: $comput-s) {

@@ -3,10 +3,9 @@
 var app = {
 
     init: function() {
-  
-        function checkScroll(){
-            var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
         
+        function checkScroll(){
+            var startY = $('.navbar').height() * 1; //The point where the navbar changes in px
             if($(window).scrollTop() > startY){
                 $('.navbar').addClass("scrolled");
             }else{
@@ -20,7 +19,6 @@ var app = {
             });
         }
     },
-  
 
 }
   
